@@ -1,28 +1,4 @@
-# Thesis Template
+# Modeling Human Mobility considering Spatial, Temporal and Social Dimensions.
 
-## Mirroring this repository
-Open Terminal.
 
-Create a bare clone of the repository.
-  ```bash
-  git clone --bare https://github.com/kdd-lab/thesis_template.git
-  ```
-  
-Mirror-push to the new repository.
-
-  ```bash
-  cd thesis_template.git
-  git push --mirror https://github.com/kdd-lab/new_repository_name.git
-  ```
-  
-Remove the temporary local repository you created in step 1.
-
-  ```bash
-  cd ..
-  rm -rf thesis_template.git
-  ```
-  
-Where ``new_repository_name`` has the following format: year_surname
-
-- **year**: year of creation
-- **sourname**: student surname
+Generative models of human mobility have the purpose of generating realistic trajectories for a set of agents.
