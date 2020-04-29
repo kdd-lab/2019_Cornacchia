@@ -4,7 +4,7 @@
 Generative models of human mobility have the purpose of generating realistic trajectories for a set of agents.
 
 The models considered exploit two competing mechanisms to describe human mobility: exploration and preferential return. The
-exploration mechanism models the scaling law presented by Song et al.: the tendency to explore new locations decreases over time.
+exploration mechanism models the scaling law presented by Song et al.(https://www.researchgate.net/publication/47278344_Modelling_the_scaling_properties_of_human_mobility): the tendency to explore new locations decreases over time.
 Preferential return reproduces the significant propensity of individuals to return to locations they explored before.
 
 Most generative models focus only on the spatial and temporal dimensions of human mobility.
