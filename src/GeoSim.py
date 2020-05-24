@@ -10,9 +10,6 @@ from igraph import *
 from math import sqrt, sin, cos, pi, asin, pow, ceil
 
 
-
-
-
 '''
 Implementation of GeoSim
 
@@ -724,7 +721,12 @@ class GeoSim():
                 
             
             if self.distance:
-                self.distance_matrix = scipy.sparse.lil_matrix((len(self.spatial_tessellation),len(self.spatial_tessellation)))
+                if distance_matrix is not None:
+                    self.distance_matrix = distance_matrix
+                    print("Pre-computed matrix")
+                else:
+                    self.distance_matrix = scipy.sparse.lil_matrix((len(self.spatial_tessellation),len(self.spatial_tessellation)))
+        
         
         if random_state is not None:
             numpy.random.seed(random_state)
